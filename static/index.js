@@ -55,7 +55,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
     }
 
     function modeToString(m) {
-        return m === MODE_NORMAL ? "普通模式" : (m === MODE_ENDLESS ? "无尽模式" : "练习模式");
+        return m === MODE_NORMAL ? "普通模式" : (m === MODE_ENDLESS ? "無盡模式" : "練習模式");
     }
 
     w.changeMode = function(m) {
@@ -441,11 +441,11 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 5) return '试着好好练一下？';
-        if (cps <= 8) return 'TCL';
-        if (cps <= 10)  return 'TQL';
-        if (cps <= 15) return '您';
-        return '人？';
+        if (cps <= 5) return '加油啦，我明天要出國欸!';
+        if (cps <= 8) return '有點屌';
+        if (cps <= 10)  return '我認可你，臭甲!';
+        if (cps <= 15) return '能這麼猛一定是班導';
+        return '拜託別約談我Plz';
     }
 
     function toStr(obj) {
